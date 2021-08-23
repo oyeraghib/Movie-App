@@ -1,15 +1,31 @@
 package com.example.movieapp.data.vo
 
+
+import com.google.gson.annotations.SerializedName
+
 data class MovieDetails(
-    val homepage: String,
+    @SerializedName("budget")
+    val budget: Int,
+    @SerializedName("id")
     val id: Int,
-    val imdb_id: String,
-    val poster_path: String,
-    val release_date: String,
+    @SerializedName("overview")
+    val overview: String,
+    @SerializedName("poster_path")
+    val posterPath: String,
+    @SerializedName("release_date")
+    val releaseDate: String,
+    @SerializedName("revenue")
+    val revenue: Int,
+    @SerializedName("runtime")
     val runtime: Int,
+    @SerializedName("status")
     val status: String,
+    @SerializedName("tagline")
     val tagline: String,
+    @SerializedName("title")
     val title: String,
-    val vote_average: Double,
-    val vote_count: Int
+    @SerializedName("video")
+    val video: Boolean,
+    @SerializedName("vote_average")
+    val voteAverage: Double,
 )
