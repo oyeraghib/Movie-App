@@ -4,12 +4,10 @@ package com.example.movieapp.data.vo
 import com.google.gson.annotations.SerializedName
 
 data class MovieResponse(
-    @SerializedName("page")
-    val page: Int,
-    @SerializedName("results")
-    val movieList: List<Movie>,
-    @SerializedName("total_pages")
-    val totalPages: Int,
-    @SerializedName("total_results")
-    val totalResults: Int
+    @SerializedName("Response")
+    val response: String,
+    @SerializedName("Search")
+    val Search: List<Movie>,
+    @SerializedName("totalResults")
+    val totalResults: String
 )
