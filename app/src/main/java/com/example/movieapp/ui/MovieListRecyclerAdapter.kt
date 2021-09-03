@@ -1,20 +1,17 @@
 package com.example.movieapp.ui
 
 import android.annotation.SuppressLint
-import android.app.ActionBar
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.NonNull
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.movieapp.databinding.ListItemMoviesBinding
-import movie.app.api.models.responses.Movie
+import movie.app.api.models.Movie
 
-class MovieListAdapter(diffCallback: DiffUtil.ItemCallback<Movie>) :
-    ListAdapter<Movie, MovieListAdapter.MovieListViewHolder>(diffCallback) {
+class MovieListRecyclerAdapter() :
+    ListAdapter<Movie, MovieListRecyclerAdapter.MovieListViewHolder>(MovieListDiffCallback()) {
 
     class MovieListViewHolder(val binding: ListItemMoviesBinding): RecyclerView.ViewHolder(binding.root)
 

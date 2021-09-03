@@ -17,7 +17,7 @@ class MovieClientTest {
 
             runBlocking {
 
-                var movies = api.getMovie( "ce14627836985b759f9d5bf25fbaa6ab")
+                var movies = api.getMovie()
                 assertNotNull(movies.body())
 
             }

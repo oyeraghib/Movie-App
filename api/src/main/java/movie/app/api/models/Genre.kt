@@ -1,4 +1,4 @@
-package movie.app.api.models.responses
+package movie.app.api.models
 
 
 import com.squareup.moshi.Json
