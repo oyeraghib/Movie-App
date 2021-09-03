@@ -1,0 +1,41 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+    id 'kotlin-kapt'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    //Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.30"
+
+    //Retrofit
+    api "com.squareup.retrofit2:retrofit:$retrofit_version"
+
+
+    //Converter Moshi
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+
+
+    //Moshi
+    implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+
+
+    //Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+
+
+    //test
+    testImplementation 'junit:junit:4.13.2'
+
+
+    //OkHTTP
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.5.30"
+
+}

@@ -13,11 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieApp">
-        <activity android:name="com.example.movieapp.ui.single_movie_details.SingleMovie">
 
-        </activity>
-        <activity android:name="single.movie.single_movie_detail.SingleMovie"
-            tools:ignore="MissingClass" />
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
